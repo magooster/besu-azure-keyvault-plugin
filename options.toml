@@ -1,0 +1,26 @@
+# Azure Key Vault Plugin Sample Options
+network="dev"
+miner-enabled=true
+miner-coinbase="0xfe3b557e8fb62b89f4916b721be55ceb828dbd73"
+
+data-path="data/dev"
+
+host-whitelist=["127.0.0.1", "localhost"]
+
+# Security Module plugin to use
+security-module="azure-key-vault"
+
+# Azure Key Vault url
+plugin-azure-key-vault-url="https://<VAULT_NAME>.vault.azure.net/"
+
+# Name of the secret in Azure Key Vault
+plugin-azure-key-vault-secret-name="besu"
+
+# Service principal's app id
+plugin-azure-key-vault-client-id=""
+
+# id of the principal's Azure Active Directory tenant
+plugin-azure-key-vault-tenant-id=""
+
+# one of the service principal's client secrets
+plugin-azure-key-vault-client-secret=""
