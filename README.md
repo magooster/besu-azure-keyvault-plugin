@@ -47,24 +47,28 @@ $BESU_HOME/bin/besu --config-file=options.toml
 --security-module="azure-key-vault"
 
 #### Azure Key Vault url
-plugin-azure-key-vault-url="https://<VAULT_NAME>.vault.azure.net/"
+--plugin-azure-key-vault-url="https://<VAULT_NAME>.vault.azure.net/"
 
 #### Name of the secret in Azure Key Vault
-plugin-azure-key-vault-secret-name="besu"
+--lugin-azure-key-vault-secret-name="besu"
 
 #### Azure Service principal's app id
-plugin-azure-key-vault-client-id=""
+--plugin-azure-key-vault-client-id=""
 
 #### id of the principal's Azure Active Directory tenant
-plugin-azure-key-vault-tenant-id=""
+--plugin-azure-key-vault-tenant-id=""
 
 #### one of the service principal's client secrets
-plugin-azure-key-vault-client-secret=""
+--plugin-azure-key-vault-client-secret=""
 
 ### Running in Azure
 
 If using a system manged identity only the vault-url and secret-name are required.
 If using a user assigned identity also need to configure the client-id.
+
+## Disclaimer
+
+This is very much a demo for others to learn from - use at your own risk..
 
 
 
